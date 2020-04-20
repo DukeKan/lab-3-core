@@ -9,25 +9,30 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-//@Component("person")
+@Component("person")
 public class UsualPerson implements Person {
 	
 	public static int createdPersons = 0; 
 
-//    @Value("${person.id}")
+    @Value("${person.id}")
     private int id;
 
+    @Value("${person.name}")
     private String name;
 
     @Autowired
     private Country country;
 
+    @Value("${person.age}")
     private int age;
 
+    @Value("${person.height}")
     private float height;
 
+    @Value("${person.isProgrammer}")
     private boolean isProgrammer;
 
+    @Value("${person.isRegistered}")
     private boolean isRegistered;
 
 	private List<String> contacts;
