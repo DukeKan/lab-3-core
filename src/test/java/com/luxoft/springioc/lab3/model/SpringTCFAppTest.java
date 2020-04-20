@@ -13,8 +13,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.luxoft.springioc.lab3.model.Country;
 import com.luxoft.springioc.lab3.model.UsualPerson;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
 @ContextConfiguration("classpath:application-context.xml")
 public class SpringTCFAppTest {
 	
